@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Can I Have The Time</title>
+	<script type="text/javascript">
+        var Hour = 3;
+        var Minute = 50;
+        var Period = "PM";
+
+        var Sentence = "It's";
+     if (Minute === 5)
+     {  Sentence += " 5 after " + Hour}
+     else if (Minute === 15)
+     {  Sentence += " 15 after " + Hour
+     }
+     else if (Minute === 30)
+     {  Sentence += " half past " + Hour
+     }
+     else if (Minute > 30)
+     {   Sentence +=" almost " + (Hour + 1)
+     }
+     else 
+     {   Sentence +=" just after " + Hour
+     }
+     if (Period == "AM")
+     {   Sentence += " in the morning."
+     }
+     else if (Period === "PM" && Hour > 6)
+     {   Sentence += " in the evening."
+     }
+     else 
+     {  Sentence += " in the afternoon."}
+
+     console.log(Sentence);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
